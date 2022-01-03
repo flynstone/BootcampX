@@ -9,6 +9,10 @@ Get all of the students currently enrolled.
     Order them by cohort_id.
 */
 
+SELECT name, id, cohort_id
+FROM students
+WHERE end_date IS NULL
+ORDER BY cohort_id;
 
 
 /*
